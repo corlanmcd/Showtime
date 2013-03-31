@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Showtime.NoActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:seekBarStyle">@style/Widget.Holo.Light.SeekBar.Orange</item>
+    </style>
+    <style name="Theme.Showtime" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarTabStyle">@style/Widget.Holo.Light.Tab.Orange</item>
+        <item name="android:editTextBackground">@drawable/edit_text_background_orange</item>
+        <item name="android:seekBarStyle">@style/Widget.Holo.Light.SeekBar.Orange</item>
+    </style>
+    <style name="Widget.Holo.Light.Tab.Orange" parent="@android:style/Widget.Holo.Light.Tab">
+        <item name="android:background">@drawable/tab_indicator_orange</item>
+    </style>
+    <style name="Widget.Holo.Light.SeekBar.Orange" parent="@android:style/Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_orange</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_orange</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_orange</item>
+    </style>
+    <color name="light_blue">#a2d1f2</color>
+    <color name="dark_blue">#67a5d1</color>
+    <color name="orange">#f49a0c</color>
+</resources>
+<!-- Orange: f49a0c - 1. 100% decked, 2. 60% deckend, 3. 30% deckend -->

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layoutAnimation="@anim/anim_slide_down"
+	android:background="@android:color/black"
+	android:fillViewport="true"
+    android:scrollbars="none" >
+    <GridLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:columnCount="3"
+		android:rowCount="1" >
+	
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_row="0"
+			android:layout_column="0"
+			android:layout_gravity="bottom|top"
+			android:background="@drawable/film_reel_border"
+			android:baselineAlignBottom="false"
+			android:contentDescription="@string/app_separatorDescription"/>
+    
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_row="0"
+			android:layout_column="1"
+			android:layout_gravity="fill_horizontal"
+		    android:background="@color/light_blue"
+		    android:orientation="vertical"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp" >
+		    
+		    <LinearLayout
+		        android:id="@+id/search_new_layoutDummy"
+			    android:layout_width="0px"
+			    android:layout_height="0px"
+			    android:orientation="vertical"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true" />
+	
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+		    
+			    <EditText
+			        android:id="@+id/search_new_editTextLocation"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="top"
+			        android:layout_weight="3"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:layout_marginBottom="10dp"
+			        android:inputType="text"
+			        android:hint="@string/search_new_location"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+			    <ImageButton
+			        android:id="@+id/search_new_buttonHistory"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			       	android:layout_gravity="top|center_horizontal"
+			        android:layout_weight="1"
+			        android:layout_marginRight="10dp"
+			        android:paddingLeft="20dp"
+		            android:paddingRight="20dp"
+			        android:src="@drawable/ic_history"
+			        android:background="@drawable/btn_orange"
+			        android:contentDescription="@string/search_new_image"/>
+			    
+			</LinearLayout>
+	
+			<TextView
+			    android:id="@+id/search_new_textViewRadius"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="top"
+			    android:paddingLeft="26dp"
+			    android:paddingRight="10dp"
+			    android:paddingBottom="10dp"
+			    android:text="@string/search_new_radius"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			<SeekBar
+		        android:id="@+id/search_new_seekBarRadius"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginBottom="10dp"
+		        android:paddingLeft="29dp"
+		        android:paddingRight="29dp" />	
+			<ImageView
+			    android:id="@+id/search_new_divider1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="fill_horizontal"
+			    android:scaleType="fitXY"
+			    android:contentDescription="@string/app_separatorDescription"
+			    android:src="@drawable/film_reel_stripe_padding" />
+		    
+		    <EditText
+		        android:id="@+id/search_new_editTextDate"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginBottom="5dp"
+		        android:inputType="date"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:focusable="false"
+		        android:longClickable="false"
+		        android:focusableInTouchMode="false" />				    <EditText
+		        android:id="@+id/search_new_editTextTime"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginBottom="5dp"
+		        android:inputType="time"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:focusable="false"
+		        android:longClickable="false"
+		        android:focusableInTouchMode="false" />	
+		    <ImageView
+		        android:id="@+id/search_new_divider2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="fill_horizontal"
+		        android:scaleType="fitXY"
+		        android:contentDescription="@string/app_separatorDescription"
+		        android:src="@drawable/film_reel_stripe_padding" />				    <EditText
+		        android:id="@+id/search_new_editTextMovie"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:inputType="text"
+		        android:hint="@string/search_new_movie"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:focusable="false"
+		        android:longClickable="false"
+		        android:focusableInTouchMode="false" />
+	
+		    <Button
+		        android:id="@+id/search_new_buttonSearch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top|center_horizontal"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp"
+		        android:paddingLeft="50dp"
+		        android:paddingRight="50dp"
+		        android:text="@string/search_new_buttonSearch"
+		        android:background="@drawable/btn_orange"
+		        android:textColor="@android:color/white"
+		        android:textSize="14sp"
+		        android:textStyle="bold"/>
+		
+		</LinearLayout>
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_row="0"
+			android:layout_column="2"
+			android:layout_gravity="bottom|top"
+			android:background="@drawable/film_reel_border"
+			android:baselineAlignBottom="false"
+			android:contentDescription="@string/app_separatorDescription"/>
+		
+	</GridLayout>
+	
+</ScrollView>

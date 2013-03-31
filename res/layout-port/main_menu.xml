@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+	android:rowCount="1" >
+	
+    <ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_row="0"
+		android:layout_column="0"
+		android:layout_gravity="bottom|top"
+		android:background="@drawable/film_reel_border"
+		android:baselineAlignBottom="false"
+		android:contentDescription="@string/app_separatorDescription"/>
+    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_row="0"
+		android:layout_column="1"
+	    android:paddingBottom="20dp"
+	    android:layout_gravity="fill_horizontal"
+	    android:background="@color/light_blue"
+	    android:orientation="vertical" >
+	    
+		<ImageView
+			    android:id="@+id/main_menu_logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="0dp"
+			    android:layout_gravity="center"
+			    android:contentDescription="@string/main_menu_logo"
+			    android:layout_weight="8"
+			    android:src="@drawable/app_logo_big" />
+		
+		<Button
+		        android:id="@+id/main_menu_buttonSearch"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top|center_horizontal"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp"
+		        android:paddingLeft="25dp"
+		        android:paddingRight="25dp"
+		        android:text="@string/main_menu_buttonSearch"
+		        android:background="@drawable/btn_orange"
+		        android:textColor="@android:color/white"
+		        android:textSize="20sp"
+		        android:layout_weight="1"
+		        android:textStyle="bold"/>
+		
+		<Button
+		        android:id="@+id/main_menu_buttonPreview"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top|center_horizontal"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp"
+		        android:paddingLeft="25dp"
+		        android:paddingRight="25dp"
+		        android:text="@string/main_menu_buttonPreview"
+		        android:background="@drawable/btn_orange"
+		        android:textColor="@android:color/white"
+		        android:textSize="20sp"
+		        android:layout_weight="1"
+		        android:textStyle="bold"/>
+		
+		<Button
+		        android:id="@+id/main_menu_buttonFavorites"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="top|center_horizontal"
+		        android:paddingTop="20dp"
+		        android:paddingBottom="20dp"
+		        android:paddingLeft="25dp"
+		        android:paddingRight="25dp"
+		        android:text="@string/main_menu_buttonFavorites"
+		        android:background="@drawable/btn_orange"
+		        android:textColor="@android:color/white"
+		        android:textSize="20sp"
+		        android:layout_weight="1"
+		        android:textStyle="bold"/>
+		
+	</LinearLayout>
+	
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_row="0"
+		android:layout_column="2"
+		android:layout_gravity="bottom|top"
+		android:background="@drawable/film_reel_border"
+		android:baselineAlignBottom="false"
+		android:contentDescription="@string/app_separatorDescription"/>
+
+</GridLayout>

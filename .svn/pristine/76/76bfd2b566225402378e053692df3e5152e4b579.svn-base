@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title"
+    android:background="#a2d1f2">
+    
+    <SwitchPreference
+        android:title="@string/settings_gpsLocation"
+        android:switchTextOn="@string/settings_on"
+        android:switchTextOff="@string/settings_off"
+        android:key="@string/settings_gpsLocation_key"
+        android:persistent="true"/>
+    <ListPreference 
+        android:entries="@array/historySizeLabels" 
+        android:key="@string/settings_history_key" 
+        android:title="@string/settings_historySize" 
+        android:entryValues="@array/historySizeValues" 
+        android:persistent="true" android:defaultValue="5"/>
+    
+</PreferenceScreen>

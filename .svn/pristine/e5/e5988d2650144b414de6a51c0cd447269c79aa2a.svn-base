@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+	
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+	
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="bottom|top"
+			android:background="@drawable/film_reel_border"
+			android:baselineAlignBottom="false"
+			android:contentDescription="@string/app_separatorDescription"/>
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"
+		    android:background="@color/light_blue"
+	        android:orientation="vertical"
+	        android:layout_weight="1"  
+		    android:paddingBottom="10dp" >
+	
+	        <TextView
+	            android:id="@+id/cinema_details_textViewTitle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dp"
+		    	android:paddingRight="10dp"
+		    	android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:background="@color/dark_blue"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textStyle="bold"
+	            android:textColor="@android:color/white" />
+	                
+	        <TableLayout 
+	            android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:shrinkColumns="1"
+	        	android:columnCount="2"
+	        	android:rowCount="8" >
+	        	
+	            <TableRow
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp" >
+	            
+			        <TextView
+			            android:id="@+id/cinema_details_textViewAddressLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_address" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewAddressRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+		        
+		        </TableRow>
+		        
+	            <ImageView
+				    android:id="@+id/cinema_details_divider1"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:scaleType="fitXY"
+				    android:contentDescription="@string/app_separatorDescription"
+				    android:src="@drawable/film_reel_stripe_padding" />
+		        
+	            <TableRow
+	                android:paddingTop="10dp"
+			        android:paddingBottom="10dp">
+	                
+			        <TextView
+			            android:id="@+id/cinema_details_textViewPricesLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_prices" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewPricesRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			    
+			    </TableRow>
+		        
+	            <TableRow
+	                android:paddingBottom="10dp">
+	                
+			        <TextView
+			            android:id="@+id/cinema_details_textViewSpecialsLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_specials" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewSpecialsRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+			    
+	            <ImageView
+				    android:id="@+id/cinema_details_divider2"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:scaleType="fitXY"
+				    android:contentDescription="@string/app_separatorDescription"
+				    android:src="@drawable/film_reel_stripe_padding" />
+			    
+	            <TableRow
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp" >
+		        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewPhoneLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_phone" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewPhoneRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+			    
+	            <TableRow
+	                android:paddingBottom="10dp" >
+		        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewFaxLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_fax" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewFaxRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+			    
+	            <TableRow
+	                android:paddingBottom="10dp" >
+		        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewWebLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_web" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewWebRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+			    
+	            <TableRow
+	                android:paddingBottom="10dp" >
+		        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewEmailLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_email" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewEmailRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+			    
+	            <ImageView
+				    android:id="@+id/cinema_details_divider3"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:scaleType="fitXY"
+				    android:contentDescription="@string/app_separatorDescription"
+				    android:src="@drawable/film_reel_stripe_padding" />
+			    
+	            <TableRow
+	                android:paddingTop="10dp" >
+		        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewDirectionLeft"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingLeft="10dp"
+			            android:paddingRight="10dp"
+			            android:textStyle="bold"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/cinema_details_direction" />
+			        
+			        <TextView
+			            android:id="@+id/cinema_details_textViewDirectionRight"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="left"
+			            android:paddingRight="10dp"
+			            android:textAppearance="?android:attr/textAppearanceMedium" 
+			            android:text="@string/no_info" />
+			        
+			    </TableRow>
+	        
+	        </TableLayout>
+	        
+	    </LinearLayout>
+	    
+	    <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="bottom|top"
+			android:background="@drawable/film_reel_border"
+			android:baselineAlignBottom="false"
+			android:contentDescription="@string/app_separatorDescription"/>
+	    
+    </LinearLayout>
+    
+</ScrollView>
